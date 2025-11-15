@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="winner">
+            <h2 id="display-winner">🏆 WINNER! 🏆</h2>
+            <!-- <div><button id="new-game" onclick="newGame()">New Game</button></div> -->
+        </div>
+        <div>
+            <h1 id="title">ScoreboarD</h1>
+        </div>
+        <div class="container">
+            <div class="team">
+                <h3 class="team-name">Home</h3>
+                <p class="team-score" id="home-score-el">0</p>
+                <div class="point-incrementer">
+                    <button onclick="increaseHomeScore(1)">+1</button>
+                    <button onclick="increaseHomeScore(2)">+2</button>
+                    <button onclick="increaseHomeScore(3)">+3</button>
+                </div>
+            </div>
+            <div class="period">
+                <p id="timer">12:00</p>
+                <h3 class="period-title">Period</h3>
+                <div class="period-container">
+                    <p id="home-leads">&#9664;</p>
+                    <p id="period-num">1</p>
+                    <p id="guest-leads">&#9654;</p>
+                </div>
+            </div>
+            <div class="team">
+                <h3 class="team-name">Guest</h3>
+                <p class="team-score" id="guest-score-el">0</p>
+                <div class="point-incrementer">
+                    <button onclick="increaseGuestScore(1)">+1</button>
+                    <button onclick="increaseGuestScore(2)">+2</button>
+                    <button onclick="increaseGuestScore(3)">+3</button>
+                </div>
+            </div>
+        </div>
+        <button id="new-game" onclick="newGame()">New Game</button>
+        <script src="index.js"></script>
+    </body>
+</html>

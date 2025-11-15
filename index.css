@@ -1,0 +1,160 @@
+@font-face {
+    src: url('./assets/scoreboard-text.ttf');
+    font-family: Scoreboard;
+}
+
+@font-face {
+    src: url("./assets/Atlanta-College.ttf");
+    font-family: Atlanta;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-family: "Graduate", serif;
+    background: #1B244A;
+    text-align: center;
+    background-image: url("./images/bb-court.jpg");
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 650px;
+    border: 3px solid #eeeeee;
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    /* padding-top: 70px; */
+    padding-bottom: 70px;
+    margin-bottom: 50px;
+}
+
+.team-name {
+    font-size: 40px;
+    font-weight: 700;
+    color: #D9DFE5;
+    margin-bottom: 21px;
+    text-shadow: 0 0 4px black;
+}
+
+.team-score {
+    font-size: 90px;
+    font-family: Scoreboard, serif;
+    background: #080001;
+    color: #FF8C42;
+    margin: auto;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 120px;
+    /* width: 155px; */
+    border-radius: 5px;
+    border: 3px solid;
+    box-shadow: 0 0 4px black;
+}
+
+.point-incrementer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-top: 26px;
+}
+
+button {
+    background: #080001;
+    color: #A8FF60;
+    font-family: Scoreboard, serif;
+    padding: 9px;
+    border: 2px solid #A8FF60;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+    margin: 5px;
+}
+
+#title {
+    /* font-family: Atlanta, serif; */
+    color: #F2F2F2;
+    font-size: 100px;
+    text-shadow: 0px 0px 5px black;
+}
+
+#new-game {
+    font-family: "Graduate", serif;
+    font-size: 25px;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(6px);
+    border: 3px solid #eeeeee;
+    color: #D9DFE5;
+    text-shadow: 0 0 4px black;
+    margin-bottom: 50px;
+}
+
+.period {
+    font-size: 25px;
+    color: #D9DFE5;
+    text-shadow: 0 0 4px black;
+}
+
+.period-title {
+    margin-bottom: 5px;
+}
+
+#period-num, #timer {
+    background: #080001;
+    height: 25px;
+    color: #FF8C42;
+    margin: 15px 25px;
+    padding: 9px 12px;
+    font-family: Scoreboard, serif;
+    border-radius: 5px;
+    border: 3px solid;
+    box-shadow: 0 0 4px black;
+}
+
+#timer {
+    height: auto;
+    font-size: 40px;
+    padding: 12px 12px 6px 12px;
+}
+
+.period-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#home-leads, #guest-leads, #winner {
+    color: #080001;
+}
+
+#winner {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(135deg, #1B244ACC, #2D3B6BCC);
+    /* background-color: #080001; */
+    z-index: 1000;
+    text-shadow: 0 0 4px black;
+}
+
+#display-winner {
+    color: #D9DFE5;
+    font-size: 50px;
+}
+
+body.disable-background {
+    overflow: hidden;
+    pointer-events: none;
+}
+
+body.disable-background #new-game {
+    pointer-events: auto;
+}
