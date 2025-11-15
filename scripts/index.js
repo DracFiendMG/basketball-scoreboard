@@ -10,7 +10,7 @@ let winningTeam = document.getElementById("display-winner")
 let homeScore = 0
 let guestScore = 0
 let period = 1
-let startTime = 12
+let startTime = 0.5 // 12 is the original time limit, but decreasing it to 30 seconds for better experience
 let timeInSeconds = startTime * 60
 let timerInterval
 
