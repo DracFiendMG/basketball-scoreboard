@@ -10,7 +10,7 @@ let winningTeam = document.getElementById("display-winner")
 let homeScore = 0
 let guestScore = 0
 let period = 1
-let startTime = 0.1
+let startTime = 12
 let timeInSeconds = startTime * 60
 let timerInterval
 
