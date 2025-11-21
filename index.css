@@ -155,6 +155,23 @@ body.disable-background {
     pointer-events: none;
 }
 
-body.disable-background #new-game {
+body.disable-background #new-game, body.disable-background .github {
     pointer-events: auto;
+}
+
+a {
+    border: 1px solid #D9DFE5;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 0 5px #D9DFE5;
+}
+
+i {
+    margin-left: 5px;
+}
+
+.github {
+    margin-top: 40px;
 }
