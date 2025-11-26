@@ -90,7 +90,7 @@ function displayWinner() {
     if (homeScore > guestScore) {
         winningTeam.textContent = "🏆 HOME TEAM WINS! 🏆"
     } else if (homeScore < guestScore) {
-        winningTeam.textContent = "🏆 GUEST TEAM WINS! 🏆"
+        winningTeam.textContent = "🏆 AWAY TEAM WINS! 🏆"
     } else {
         winningTeam.textContent = "🏆 DRAW! 🏆"
     }
